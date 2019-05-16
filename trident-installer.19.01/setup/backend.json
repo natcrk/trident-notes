@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "storageDriverName": "solidfire-san",
+    "Endpoint": "https://trident:NetApp123$@10.128.59.69/json-rpc/8.0",
+    "SVIP": "10.128.56.50:3260",
+    "TenantName": "trident",
+    "InitiatorIFace": "default",
+    "UseCHAP": true,
+    "Types": [{"Type": "Bronze", "Qos": {"minIOPS": 100, "maxIOPS": 500, "burstIOPS": 1000}},
+              {"Type": "Silver", "Qos": {"minIOPS": 2000, "maxIOPS": 10000, "burstIOPS": 12000}},
+              {"Type": "Gold", "Qos": {"minIOPS": 3000, "maxIOPS": 15000, "burstIOPS": 20000}},
+              {"Type": "Extreme", "Qos": {"minIOPS": 50, "maxIOPS": 100000, "burstIOPS": 100000}}]
+}
